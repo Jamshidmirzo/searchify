@@ -7,7 +7,7 @@ Map<String, dynamic> binarySearch(dynamic collection, dynamic key) {
   if (collection is List) {
     // Check if the collection is a List and the key is Comparable
     if (key is Comparable) {
-      index = _binarySearchList(collection as List<Comparable>,  key);
+      index = _binarySearchList(collection as List<Comparable>, key);
     } else {
       throw ArgumentError('Key must be Comparable for list search');
     }
@@ -19,7 +19,7 @@ Map<String, dynamic> binarySearch(dynamic collection, dynamic key) {
   }
 
   stopwatch.stop(); // Stop the stopwatch after the search is complete
-  
+
   // Return the index and time taken in milliseconds (as double for precision)
   return {
     'index': index,
@@ -84,7 +84,7 @@ Map<String, dynamic> linearSearch(dynamic collection, dynamic key) {
   }
 
   stopwatch.stop(); // Stop the stopwatch after the search is complete
-  
+
   // Return the index and time taken in milliseconds (as double for precision)
   return {
     'index': index,
@@ -109,6 +109,7 @@ int _linearSearchString(String string, String key) {
   }
   return -1; // Character not found
 }
+
 // jump_search.dart
 // Function to perform jump search
 Map<String, dynamic> jumpSearch(dynamic collection, dynamic key) {
@@ -131,7 +132,7 @@ Map<String, dynamic> jumpSearch(dynamic collection, dynamic key) {
   }
 
   stopwatch.stop(); // Stop the stopwatch after the search is complete
-  
+
   // Return the index and time taken in milliseconds (as double for precision)
   return {
     'index': index,
