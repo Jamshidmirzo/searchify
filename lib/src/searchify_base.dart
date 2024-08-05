@@ -7,7 +7,7 @@ Map<String, dynamic> binarySearch(dynamic collection, dynamic key) {
   if (collection is List) {
     // Check if the collection is a List and the key is Comparable
     if (key is Comparable) {
-      index = _binarySearchList(collection as List<Comparable>, key as Comparable);
+      index = _binarySearchList(collection as List<Comparable>,  key);
     } else {
       throw ArgumentError('Key must be Comparable for list search');
     }
@@ -71,7 +71,7 @@ Map<String, dynamic> linearSearch(dynamic collection, dynamic key) {
 
   if (collection is List) {
     if (key is Comparable) {
-      index = _linearSearchList(collection as List<Comparable>, key as Comparable);
+      index = _linearSearchList(collection as List<Comparable>, key);
     } else {
       stopwatch.stop(); // Stop the stopwatch before throwing an error
       throw ArgumentError('Key must be Comparable for list search');
@@ -118,7 +118,7 @@ Map<String, dynamic> jumpSearch(dynamic collection, dynamic key) {
 
   if (collection is List) {
     if (key is Comparable) {
-      index = _jumpSearchList(collection as List<Comparable>, key as Comparable, stepSize);
+      index = _jumpSearchList(collection as List<Comparable>, key, stepSize);
     } else {
       stopwatch.stop(); // Stop the stopwatch before throwing an error
       throw ArgumentError('Key must be Comparable for list search');
