@@ -1,7 +1,7 @@
 name: searchify
-description: A starting point for Dart libraries or applications.
+description: A starting point for Dart libraries or applications for searching all in dart file and in the world.
 version: 1.0.0
-repository: https://github.com/Jamshidmirzo/to_upper_case_first_character
+repository: https://github.com/Jamshidmirzo/searchify
 homepage: https://jamshids-portfolio.netlify.app
 
 environment:
